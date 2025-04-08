@@ -1,20 +1,23 @@
 # poscirle-project
-## I API Spec
-### POST /auth/login
-- **Req Body**:
-     ```json
-     {
-       "email": string,
-       "password": string
-     }
+
+## I. API Specification
+
+### 1. **POST /auth/login**
+- **Description**: Login pengguna dengan email dan password.
+- **Request Body**:
+  ```json
+  {
+    "email": "string",
+    "password": "string"
+  }
        ```
 - **Res Body**:
      ```json
     {
-        "id": string,
-        "name": string,
-        "email": string
-    }
+       "id": "string",
+       "name": "string",
+       "email": "string"
+     }
      ```
      
 ### POST /auth/register
@@ -56,8 +59,8 @@
       "data": [
          {"id": string,
          "title": string,
-         "content": string,
-         "author": {"name":string}
+         "content": String,
+         "author": {"name":String}
          }
       ]
    }
@@ -66,7 +69,7 @@
 ## GET /home/pencarian 
    -**Req Body**:
    ```json{
-      "name":string,
+      "name":"string,
    }
    ```
    -**Res Body**:
