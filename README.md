@@ -10,7 +10,7 @@
     "email": "string",
     "password": "string"
   }
-       ```
+  ```
 - **Res Body**:
      ```json
     {
