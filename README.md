@@ -38,7 +38,7 @@
    ```
 
 ### POST /posts
-   - **Req Body**:
+- **Req Body**:
    ```json
    {
       "title": "string",
@@ -54,7 +54,7 @@
    ```
 
 ## GET /home 
-   - **Res Body**:
+- **Res Body**:
    ```json
    {
       "data": [
@@ -68,7 +68,7 @@
    ```
 
 ## GET /home/pencarian 
-   - **Req Body**:
+- **Req Body**:
    ```json{
       "name": "string",
    }
