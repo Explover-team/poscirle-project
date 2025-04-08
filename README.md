@@ -15,6 +15,7 @@
         "name": string,
         "email": string
     }
+     ```
      
 ### POST /auth/register
 -**Req Body**:
