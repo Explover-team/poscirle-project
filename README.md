@@ -3,7 +3,7 @@
 ## I. API Specification
 
 ### 1. **POST /auth/login**
-- **Description**: Login pengguna dengan email dan password.
+
 - **Request Body**:
   ```json
   {
@@ -11,6 +11,7 @@
     "password": "string"
   }
   ```
+  
 - **Res Body**:
      ```json
     {
@@ -21,62 +22,62 @@
      ```
      
 ### POST /auth/register
--**Req Body**:
+- **Req Body**:
    ```json
    {
-      "name": string,
-      "email": string,
-      "password":string
+      "name": "string",
+      "email": "string",
+      "password": "string"
    }
    ```
--**Res Body**:
+- **Res Body**:
    ```json
    {
-      "message": string
+      "message": "string"
    }
    ```
 
 ### POST /posts
-   -**Req Body**:
+   - **Req Body**:
    ```json
    {
-      "title": string,
-      "content": string,
-      "author": {"name":string}
+      "title": "string",
+      "content": "string",
+      "author": {"name": "string"}
    }
    ```
-   -**Res Body**:
+   - **Res Body**:
    ```json
    {
-      "message": string 
+      "message": "string"
    }
    ```
 
 ## GET /home 
-   -**Res Body**:
+   - **Res Body**:
    ```json
    {
       "data": [
-         {"id": string,
-         "title": string,
-         "content": String,
-         "author": {"name":String}
+         {"id": "string",
+         "title": "string",
+         "content": "string",
+         "author": {"name": "string"}
          }
       ]
    }
    ```
 
 ## GET /home/pencarian 
-   -**Req Body**:
+   - **Req Body**:
    ```json{
-      "name":"string,
+      "name": "string",
    }
    ```
-   -**Res Body**:
+   - **Res Body**:
    ```json{
       "data": [
-         {"name": string,
-          "email": string 
+         {"name": "string",
+          "email": "string" 
          }
       ]
    }
